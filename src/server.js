@@ -32,7 +32,7 @@ enableHotReload(app);
 app.get("/", loginController.exibirPaginaLogin);
 app.get("/criar-conta",  cadastroController.exibirPaginaCadastro);
 app.get("/eventos", eventoController.exibirPaginaEventos);
-app.get("/criareventos", eventoController.exibirPaginaCriarEventos)
+app.get("/criarEventos", eventoController.exibirPaginaCriarEventos)
 
 
 // Inicie o servidor

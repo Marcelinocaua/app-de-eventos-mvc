@@ -3,7 +3,7 @@ function exibirPaginaEventos(request, response) {
 }
 
 function exibirPaginaCriarEventos(request, response) {
-    response.render('criareventos');
+    response.render('criarEventos');
 }
 
 
