@@ -27,12 +27,21 @@ console.log("Static files path set to:", path.join(__dirname, "public"));
 
 enableHotReload(app);
 
-// Rotas
-
+// Rotas inicial
 app.get("/", loginController.exibirPaginaLogin);
+
+// rota para a pagina de cadastro
 app.get("/criar-conta",  cadastroController.exibirPaginaCadastro);
+
+//rota para criar  um novo usuario
+app.post("/criar-conta", cadastroController.adicionarUsuario);
+
+//rota para a pagina de lista de eventos 
 app.get("/eventos", eventoController.exibirPaginaEventos);
-app.get("/criarEventos", eventoController.exibirPaginaCriarEventos)
+
+//rota para pagina para criar eventos
+app.get("/criarEventos", eventoController.exibirPaginaCriarEventos);
+
 
 
 // Inicie o servidor
