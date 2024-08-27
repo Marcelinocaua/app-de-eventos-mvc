@@ -42,6 +42,9 @@ app.get("/eventos", eventoController.exibirPaginaEventos);
 //rota para pagina para criar eventos
 app.get("/criarEventos", eventoController.exibirPaginaCriarEventos);
 
+//
+app.post("/criarEventos", eventoController.adicionarEvento);
+
 
 
 // Inicie o servidor
